@@ -32,7 +32,7 @@ namespace Cw5.Controllers
       
 
         [HttpPost]
-       // [Authorize(Roles ="Employee")]
+        [Authorize(Roles ="Employee")]
         public IActionResult EnrollStudent(EnrollStudentRequest request)
         {
             var response = _service.EnrollStudent(request);
@@ -44,7 +44,7 @@ namespace Cw5.Controllers
 
         //..
         [HttpPost("promotions")]
-       // [Authorize(Roles = "Employee")]
+        [Authorize(Roles = "Employee")]
         public IActionResult PromoteStudents(PromoteStudentRequest request)
         {
             PromoteStudentRequest res = _service.PromoteStudents(request);
