@@ -1,0 +1,7 @@
+Path: /api/enrollments/login 
+QueryString: 
+Method: POST 
+Body Parameters: {
+    "IndexNumber": "s1234",
+    "Password": "1234"
+}
